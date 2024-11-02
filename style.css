@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para dispositivos móveis */ 
+@media (max-width: 600px) { 
+.container { 
+  width: 100%;
+ } 
+} /* Estilos para desktops */ 
+@media (min-width: 601px) { 
+.container { 
+  width: 80%; 
+}
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.header {
+  background-color: #0d6efd;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #0a58ca;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.posts {
+  display: grid;
+  gap: 2rem;
+}
+
+.post {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #d1d7dd;
+  border-radius: 15px; 
+}
+
+.post h2 {
+  font-size: 1.5rem;
+  color: #0d6efd;
+  max-width: 500px; /* Define a largura máxima do parágrafo */
+  display: block; /* Garante que o título seja tratado como um bloco */
+  word-wrap: break-word; /* Quebra a palavra se não couber */
+  overflow-wrap: break-word; /* Quebra a palavra se não couber */
+  white-space: normal; /* Permite que o texto quebre em várias linhas */
+  max-width: 100%; /* Garante que o título não ultrapasse a largura do contêiner */
+  margin: 0; /* Remove margens que possam causar overflow */
+  font-size: 1.5em;
+}
+
+.post p {
+  max-width: 500px; /* Define a largura máxima do parágrafo */
+  word-wrap: break-word;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+.footer {
+  background-color: #0a58ca;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+ 
+}
+ /* Estilo para o menu flutuante */
+ .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {background-color: #f1f1f1;}
+.show { 
+  display: block; 
+} 
+
+.post-content.preview {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limita a 3 linhas */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify; /* Justifica o texto */
+  line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+  text-indent: 1.25em; /* Indenta o primeiro parágrafo */
+}
+.post-content.full {
+  display: none; /* Esconde o conteúdo completo inicialmente */
+  text-align: justify; /* Justifica o texto */
+  line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+  text-indent: 1.25em; /* Indenta o primeiro parágrafo */
+}
+
+.header, .footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #367cfd;
+  color: #fff;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.post {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .header, .footer, .main-content {
+      padding: 10px;
+  }
+  .post {
+      padding: 10px;
+  }
+}
+/* Centralizar links no header em desktop */
+@media (min-width: 601px) {
+  .navbar-nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
+  .navbar-nav .nav-item {
+      margin: 0 10px; /* Ajuste o espaçamento entre os links conforme necessário */
+  }
+}
+
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 600px) {
+  .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  .navbar-toggler {
+      align-self: flex-start; /* Garante que o botão do menu também fique à esquerda */
+  }
+
+  .navbar-collapse {
+      width: 100%;
+  }
+
+  .navbar-nav {
+      width: 100%;
+  }
+
+  .nav-item {
+      width: 100%;
+      text-align: left; /* Garante que os links do menu estejam alinhados à esquerda */
+  }
+}
+
+.btn-a {
+  border-radius: 10px;
+}
+
+
+
+
